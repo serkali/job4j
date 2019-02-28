@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Package for calculate task.
 *
 * @author Serkali Bakishev (serkali88@gmail.com)
