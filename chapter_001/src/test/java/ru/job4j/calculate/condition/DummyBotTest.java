@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class DummyBotTest {
     @Test
     public void whenGreetBot() {
-        DummyBot bot = new DummyBt
+        DummyBot bot = new DummyBot();
         assertThat(
                 bot.answer("Привет, Бот."),
                 is("Привет, умник.")
