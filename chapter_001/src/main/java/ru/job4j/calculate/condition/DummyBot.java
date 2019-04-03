@@ -6,7 +6,7 @@ package ru.job4j.calculate.condition;
  * @since 0.1
  */
 
-public class DummyBot {
+public class DummyBot
     /**
      * @param question Вопрос от клиента
      * @return ответ
