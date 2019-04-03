@@ -1,4 +1,4 @@
-package ru.job4j.сalculate;
+package ru.job4j.calculate;
 
 /**
  * Элементарный калькулятор
@@ -6,18 +6,13 @@ package ru.job4j.сalculate;
  * version 1
  */
 public class Calculator {
-    private double first;
-    private double second;
-
     /**
      * Method сложение
      * @param first
      * @param second
      * @return
      */
-    public double add ( double first, double second ) {
-        this.first = first;
-        this.second = second;
+    public double add (double first, double second ) {
         return first + second;
     }
 
