@@ -14,7 +14,7 @@ public class DummyBotTest {
         );
     }
     @Test
-    public void whenByeBot(){
+    public void whenByeBo() {
         DummyBot bot = new DummyBot();
         assertThat(
                 bot.answer("Пока."),
@@ -22,7 +22,7 @@ public class DummyBotTest {
         );
     }
     @Test
-    public void whenUnknownBot(){
+    public void whenUnknownBot() {
         DummyBot bot = new DummyBot();
         assertThat(
                 bot.answer("Сколько будет 2 + 2?"),
