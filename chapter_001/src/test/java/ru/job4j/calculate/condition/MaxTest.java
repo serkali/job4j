@@ -1,4 +1,8 @@
 package ru.job4j.calculate.condition;
+/**
+ * @author SBakishev
+ * @version 1
+ */
 
 import org.junit.Test;
 
