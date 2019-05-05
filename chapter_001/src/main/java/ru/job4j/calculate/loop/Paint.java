@@ -8,7 +8,7 @@ import java.util.function.BiPredicate;
  */
 
 public class Paint {
-        public String rightTrl(int height)
+        public String rightTrl(int height) {
             return this.loopBy(
                     height,
                     height,
