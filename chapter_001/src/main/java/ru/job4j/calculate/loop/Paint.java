@@ -5,10 +5,10 @@ import java.util.function.BiPredicate;
  * @author SBakishev
  * @version 1
  * @since 0.1
- */
+ *
 
 public class Paint {
-        public String rightTrl(int height)
+        public String rightTrl(int height) {
             return this.loopBy(
                     height,
                     height,
