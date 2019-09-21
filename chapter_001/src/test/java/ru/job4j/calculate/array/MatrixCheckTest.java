@@ -13,7 +13,7 @@ public class MatrixCheckTest {
                 {true, false, true}
         };
         boolean result = check.mono(input);
-        assertThat(result, is(true));
+        assertThat(result, is(true))
     }
 
     @Test

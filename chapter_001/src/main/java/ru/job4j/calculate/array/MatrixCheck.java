@@ -13,7 +13,7 @@ public class MatrixCheck {
                 result = false;
             }
         }
-        return result;
+        return result
     }
     }
 
