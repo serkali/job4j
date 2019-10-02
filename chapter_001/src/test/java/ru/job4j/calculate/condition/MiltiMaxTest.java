@@ -36,6 +36,12 @@ public class MiltiMaxTest {
         assertThat(result, is(4));
 
     }
+    @Test
+    public void WhenAllMaxNull(){
+        MultiMax check = new MultiMax();
+        int result  =check.max(0,0,0);
+        assertThat(result, is (0));
+    }
 
 
 }
