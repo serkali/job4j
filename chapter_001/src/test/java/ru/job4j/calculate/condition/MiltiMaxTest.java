@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 
-public class MiltiMaxTest
+public class MiltiMaxTest{
     @Test
     public void whenSecondMax() {
         MultiMax check = new MultiMax();
