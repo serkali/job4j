@@ -1,39 +1,51 @@
 package profession;
 
+import java.util.Date;
+
 /**
  * Родительский класс для создания профессий
  *version 1
  */
 
 public class Profession {
-    private String tool;
-    private int salary;
-    private String shapeColor;
-
-    public String getTool() {
-        return tool;
-    }
-
-    public void setTool(String tool) {
-        this.tool = tool;
-    }
+    private String name;
+    private String surname;
+    private String education;
+    private Date birthday;
 
     public Profession() {
+
     }
 
-    public int getSalary() {
-        return salary;
+    public String getName() {
+        return name;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getShapeColor() {
-        return shapeColor;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setShapeColor(String shapeColor) {
-        this.shapeColor = shapeColor;
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+
+    public void setEducation(String education) {
+        this.education = education;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 }
