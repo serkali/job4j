@@ -1,8 +1,14 @@
 package profession;
 
+import java.util.Date;
+
 public class Doctor extends Profession {
   public String directionOfActivity;
    public String tool;
+
+    public Doctor(String name, String surname, String education, Date birthday) {
+        super(name, surname, education, birthday);
+    }
 
     public String inspection (Pacient pacient){
         return inspect();
