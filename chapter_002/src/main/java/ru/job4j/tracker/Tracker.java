@@ -52,6 +52,6 @@ public class Tracker {
         }
         res = Arrays.copyOf(items, count);
         for (int index = 0; index < res.length; index++) ;
-        return null;
+        return res;
     }
 }
