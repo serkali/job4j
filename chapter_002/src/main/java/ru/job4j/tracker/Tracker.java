@@ -41,4 +41,23 @@ public class Tracker {
     public Item[] findAll() {
         return Arrays.copyOf(items,size);
     }
+
+    public boolean replace(Item item,String id){
+        boolean replaced = false;
+        for (int i = 0;i<items.length;i++){
+            if (items[i].equals(id)){
+                items[i]=item;
+                replaced=true;
+
+            }
+
+        }return replaced;
+    }
+
+    public boolean delete(int id){
+        boolean deleted = false;
+        System.arraycopy(items,id+1,items,id,items.length-1-id);
+        deleted = true;
+        return deleted;
+    }
 }
