@@ -11,7 +11,7 @@ public class StartUI {
     }
 
     public void init(Scanner scanner, Tracker tracker) {
-        boolean run = false;
+        boolean run = true;
         while (run) {
             this.showMenu();
             System.out.print("Select: ");
@@ -28,13 +28,12 @@ public class StartUI {
                 System.out.println("=== Show all items ===");
                 Item[] all = tracker.findAll();
                 for (int i = 0; i < all.length; i++) {
-                    System.out.println(all[i].toString());
+                    System.out.println(all[i]);
                 }
             } else if (select == 2) {
                 System.out.println("=== Edit item ===");
                 String id = scanner.nextLine();
                 Item item = new Item(id);
-                tracker.replace(item, id);
                 if (tracker.replace(item, id)) {
                     System.out.println("Успешно");
                 } else {
@@ -43,7 +42,6 @@ public class StartUI {
             } else if (select == 3) {
                 System.out.println("=== Delete item ===");
                 int id = Integer.valueOf(scanner.nextLine());
-                tracker.delete(id);
                 if (tracker.delete(id)) {
                     System.out.println("Успешно");
                 } else {
@@ -57,7 +55,7 @@ public class StartUI {
                 int requestNumber = Integer.valueOf(scanner.nextLine());
                 Item item = tracker.findById(requestNumber);
                 if (item != null) {
-                    System.out.println(requestNumber);
+                    System.out.println(item);
                 } else {
                     System.out.println("Заявки с таким именем не найдены");
                 }
