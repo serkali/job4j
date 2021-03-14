@@ -33,8 +33,10 @@ public class StartUI {
             } else if (select == 2) {
                 System.out.println("=== Edit item ===");
                 String id = scanner.nextLine();
-                Item item = new Item(id);
+                String newname = scanner.nextLine();
+                Item item = new Item(newname);
                 if (tracker.replace(item, id)) {
+                    //System.out.println("Enter name:");
                     System.out.println("Успешно");
                 } else {
                     System.out.println("Ошибка");
@@ -66,7 +68,7 @@ public class StartUI {
                 Item[] items = tracker.findByName(applicationName);
                 if (items.length > 0) {
                     for (int i = 0; i < items.length; i++) {
-                        System.out.println(items[i].toString());
+                        System.out.println(items[i]);
                     }
                 } else {
                     System.out.println("Заявки с таким именем не найдены");
