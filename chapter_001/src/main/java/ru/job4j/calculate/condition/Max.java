@@ -21,7 +21,7 @@ public class Max {
         return maxLow(third,maxLow(left,right));
     }
     public int maxLow(int left,int right,int third,int four){
-        return maxLow(four,maxLow(third,maxLow(left,right)));
+        return maxLow(four,maxLow(left, right,third));
     }
 }
 
