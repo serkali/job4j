@@ -13,13 +13,12 @@ public class Max {
      * @return
      */
     public int maxLow(int left, int right) {
-        int result = left - right < 0 ? right : left; //метод должен возвращать максимальное число из двух чисел
-        return result;
+        return left < right ? right : left; //метод должен возвращать максимальное число из двух чисел
+
     }
 
     public int maxLow(int left, int right, int third) {
-        int tmp = maxLow(left, right);
-        return third > tmp ? third : tmp;
+        return maxLow(third,maxLow(left,right));
     }
 }
 
