@@ -32,4 +32,11 @@ public class MaxTest {
         int result = max(2, 2);
         assertThat(result, is(2));
     }
+
+    @Test
+    public void whenMax3number() {
+        Max max = new Max();
+        int tmp = max.maxLow(2, 2, 3);
+        assertThat(tmp, is(3));
+    }
 }
