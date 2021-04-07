@@ -14,4 +14,12 @@ public class PointTest {
 
         assertThat(result, is(2.0));
     }
+    @Test
+    public void test3dPoint(){
+        Point point = new Point(0,0,0);
+        Point point1 = new Point(0,2,2);
+        double result = point.distance3d(point1);
+        assertThat(result,is(2.8284271247461903));
+
+    }
 }
