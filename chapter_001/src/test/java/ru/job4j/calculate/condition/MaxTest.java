@@ -39,4 +39,10 @@ public class MaxTest {
         int tmp = max.maxLow(2, 2, 3);
         assertThat(tmp, is(3));
     }
+    @Test
+    public void whenMax4Number(){
+        Max max = new Max();
+        int tmp = max.maxLow(1,2,3,4);
+        assertThat(tmp,is(4));
+    }
 }

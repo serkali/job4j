@@ -20,6 +20,9 @@ public class Max {
     public int maxLow(int left, int right, int third) {
         return maxLow(third,maxLow(left,right));
     }
+    public int maxLow(int left,int right,int third,int four){
+        return maxLow(four,maxLow(third,maxLow(left,right)));
+    }
 }
 
 
