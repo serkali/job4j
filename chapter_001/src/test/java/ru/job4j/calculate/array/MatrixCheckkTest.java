@@ -15,4 +15,16 @@ public class MatrixCheckkTest {
         boolean result = MatrixCheckk.monoHorizontal(input, row);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void whenHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean result = MatrixCheckk.monoVertical(input, column);
+        Assert.assertTrue(result);
+    }
 }
