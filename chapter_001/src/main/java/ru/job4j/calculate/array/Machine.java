@@ -12,12 +12,12 @@ public class Machine {
         //price - цена покупки
         //определяем размер сдачи
         int change = money - price;
-        for (int i = 0; i < coins.length; i++) {
+        for (int coin : coins) {
             //условие выдачи сдачи
-            while (change - coins[i] >= 0) {
-                rsl[size] = coins[i];
+            while (change - coin >= 0) {
+                rsl[size] = coin;
                 //возвращаем монеты
-                change = change - coins[i];
+                change = change - coin;
                 size++;
             }
         }
